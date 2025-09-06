@@ -1,5 +1,6 @@
 // This solution beats space complexity by sorting and then matching the charaters.
-
+// Time Complexity : O(nlogn)
+// Space Complexity : O(1)
 class Solution {
 public:
     bool isAnagram(string s, string t) {
