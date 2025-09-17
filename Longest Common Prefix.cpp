@@ -14,6 +14,9 @@
 // - Space complexity:
 // O(1)
 
+// Input: strs = ["flower","flow","flight"]
+// Output: "fl"
+
 class Solution {
 public:
     string longestCommonPrefix(vector<string>& strs) {
