@@ -21,12 +21,17 @@
 class Solution {
 public:
     vector<vector<string>> groupAnagrams(vector<string>& strs) {
+        // Declare unordered_map
         unordered_map<string, vector<string>> groupanagrams;
+
+        //iterate to store the strings
         for(const string s: strs){
             string key = s;
             sort(key.begin(), key.end());
             groupanagrams[key].push_back(s);
         }
+        
+        // store the vectors in the map to the 2d array
         vector<vector<string>> group;
         for(auto const &pair: groupanagrams){
             group.push_back(pair.second);
